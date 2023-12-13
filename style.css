@@ -28,9 +28,9 @@ nav img {
     flex: 1;
     text-align: right;
 }
-.menu-item:hover .submenu {
+.menu-item:hover .submenu,
+.submenu:hover {
     display:block;
-    
 }
 .menu-item span {
     color:#fff ;
@@ -41,10 +41,14 @@ nav img {
     position: absolute;
     top: 100%;
     left: 0;
+    text-align: left;
+    background-color: #0C6956;
 }
 .submenu a {
-    padding: 0px;
+    padding: 10px;
     display: block;
+    text-decoration: none;
+    color: #fff;
 }
 
 .submenu-item:hover{
@@ -146,27 +150,30 @@ nav .fa {
         display:block;
     }
     .nav-links {
-        position: fixed;
-        background: #00000000;
+        position:fixed;
+        background: #0C6956;
         height: 100vh;
         width: 200px;
         top: 0px;
         right: -200px;
         text-align: left;
-        z-index: 2;
+        z-index: 3;
         transition: 1s;
     }
     nav .fa {
         display: flex;
         color: #fff;
-        margin: 10px;
+        margin: 20px;
         font-size: 22px;
         cursor: pointer;
-        
+
     }
     .nav-links ul {
         padding: 30px;
     }
+
+    
+    
 }
 
 
@@ -384,7 +391,7 @@ h3 {
 }
 .about-us h1 {
     font-size: 36px;
-    background: linear-gradient(to right, #11B494 , #e0e0e0);
+    background: linear-gradient(to right, #11b494 , #e0e0e0);
     padding: 15px; /* Dodatkowy padding dla tekstu */
     border: 2px solid #ccc; /* Kolor i grubość ramki */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -394,7 +401,19 @@ h3 {
     width: 100%;
     margin: auto;
 }
-
+.about-us2 h3 {
+    font-size: 20;
+    margin: auto;
+    margin-left: 130px;
+    text-align: left;
+    margin-right: 130px;
+}
+.about-us2 h5 {
+    font-size: 10;
+    margin-left: 130px;
+    margin-right: 130px;
+    text-align: left;
+}
 .about-col {
     font-family: 'Times New Roman', Times, serif;
     flex-basis: 48%;
