@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>HELPDIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Strona domowa</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li class="menu-item">
+                        <span>Projekt</span>
+                        <ul class="submenu">
+                            <li><a href="oferta.html">Co robimy</a></li>
+                            <li><a href="raport.html">Raport</a></li>
+                            <li><a href="pytanie.html">Pytanie Generatywne</a></li>
+                            <li><a href="pomysl.html">Burza mózgów</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="kontakt.html">Zespół</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Pomysły rozwiązań problemu</h1>
+    </section>
+    <section class="tabelka">
+        <table>
+            <tr>
+                <th>NOW</th>
+                <th>HOW</th>
+                <th>WOW</th>
+            </tr>
+            <tr>
+                <td>•   Personel przeszkolony w obsłudze niepełnosprawnych: Wprowadzenie specjalnych szkoleń dla personelu sklepów, aby lepiej zrozumieli potrzeby osób niepełnosprawnych i byli w stanie im pomóc.<br>
+                    •	Podjazdy dla wózków<br>
+                    •	Windy dla wózków<br>
+                    •	Informacje dźwiękowe<br>
+                    •	Ciche godziny<br>
+                    •	Stanowiska przy kasie dla niepełnosprawnych<br>
+                    •	Dostosowanie przestrzeni sklepowej<br>
+                    •	Niższe półki sklepowe<br>
+                    •	Chwytaki do artykułów<br>
+                    •	Aplikacja mobilna do skanowania etykiet produktów<br>
+                    •	Dostosowanie etykiet kolorów oznaczających różne sekcje sklepu<br>
+                    •	Dostępność informacji online: Udostępnienie informacji o dostępności produktów online przed wizytą w sklepie, aby osoby niepełnosprawne mogły zaplanować swoje zakupy z wyprzedzeniem.
+                </td>
+                <td>•	Alfabet Braille'a dla każdego produktu w sklepie, ale bez nanoszenia go na każdy produkt<br>
+                    •	Technologie noszone na ciele: takie jak inteligentne okulary lub słuchawki, które mogą dostarczać informacje w czasie rzeczywistym o otoczeniu, w tym informacje o produktach i ich lokalizacji w sklepie.<br>
+                    •	Rozpoznawanie gestów i mimiki: Opracowanie systemu, który wykorzystuje zaawansowane algorytmy do rozpoznawania gestów i mimiki, co umożliwiałoby obsługę interakcji z klientami niepełnosprawnymi w sklepie.<br>
+                    •	Roboty pomocnicze: które mogą asystować osobom niepełnosprawnym w sklepie, pomagając im w przenoszeniu zakupów, dostępie do półek, czy nawet prowadzeniu ich do konkretnych produktów.<br>
+                    •	Inteligentne etykiety RFID: Zastosowanie inteligentnych etykiet RFID, które komunikują się z urządzeniem osobistym, pomagając w identyfikacji produktów i informacjach o cenach.
+                </td>
+                <td>•	Aplikacja asystent dla osób niepełnosprawnych<br>
+                    •	Wzywanie pracownika sklepu za pomocą aplikacji<br>
+                    •	Interaktywne mapy sklepów na smartfonach: Stworzenie prostych, interaktywnych map sklepów dostępnych na smartfonach, które nie tylko pokazują lokalizację produktów, ale także proponują optymalne trasy dla osób z różnymi rodzajami niepełnosprawności.<br>
+                    •	Technologia rozszerzonej rzeczywistości - Stworzenie aplikacji AR, która poprzez użycie kamery smartfonu oraz sztucznej inteligencji (na zasadzie rozpoznawania obrazu) dostarcza dodatkowe informacje o produktach na półkach, takie jak opinie klientów czy sugerowane zamienniki, wspierając tym samym proces decyzyjny osób niepełnosprawnych. <br>
+                    •	Platforma wymiany doświadczeń: Stworzenie platformy społecznościowej, gdzie osoby niepełnosprawne mogą dzielić się swoimi doświadczeniami z zakupów, wskazywać na przyjazne sklepy i udzielać porad innym.
+                </td>
+            </tr>
+            <!-- Dodaj więcej wierszy w razie potrzeby -->
+        </table>
+        <div class="raportpowrot">
+            <p><a href="oferta.html" class="hero-btn2 black-btn">Czym się zajmujemy</a></p>
+        </div>
+    </section>
+
+
+    <!---footer--->
+    <section class="footer">
+        <h4>JESTEŚMY NA</h4>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+    <script>
+        //JAVASCRIPT DLA MENU
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
